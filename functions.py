@@ -18,3 +18,4 @@ if final_price != original_price:
     print(f"Final price after discount: {final_price:.2f}")
 else:
     print(f"No discount applied. Original price: {original_price:.2f}")
+    
