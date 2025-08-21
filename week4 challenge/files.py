@@ -9,7 +9,7 @@ uppercase_content = content.upper()
 
 
 with open("week4 challenge/output.txt", "w") as file1:
-    file1.write("Processed Text:\n")
+    file1.write(content + "\n")
     file1.write(uppercase_content + "\n\n")
     file1.write(f"Word Count: {word_count}\n")
 
