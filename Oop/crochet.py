@@ -16,10 +16,11 @@ class Crochet(Craft):
         self.hours_spent = hours_spent
 
     def start_project(self):
-        return f"Started crocheting a {self.name} with {self.yarn_color} yarn 🧶"
+        return f"Started crocheting a {self.name} with {self.yarn_color} yarn"
 
     def finish_project(self):
         return f"Finished {self.name}! Took {self.hours_spent} hours."
 
     def __str__(self):
         return f"{self.craft_info()} | Yarn Color: {self.yarn_color} | Hours Spent: {self.hours_spent}"
+
