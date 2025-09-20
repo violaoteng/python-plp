@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from wordcloud import WordCloud
 import numpy as np
 
 # Set page config
@@ -92,9 +91,8 @@ with tab2:
 with tab3:
     st.header("Word Cloud of Paper Titles")
     title_text = ' '.join(filtered_df['title'].dropna().astype(str))
-    wordcloud = WordCloud(width=800, height=400, background_color='white').generate(title_text)
     fig, ax = plt.subplots(figsize=(12, 6))
-    ax.imshow(wordcloud, interpolation='bilinear')
+
     ax.axis('off')
     ax.set_title('Word Cloud of Paper Titles')
     st.pyplot(fig)
